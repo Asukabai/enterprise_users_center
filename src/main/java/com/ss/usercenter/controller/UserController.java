@@ -1,14 +1,14 @@
-package com.ss.center.controller;
+package com.ss.usercenter.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.ss.center.common.BaseResponse;
-import com.ss.center.common.ErrorCode;
-import com.ss.center.common.ResultUtils;
-import com.ss.center.dto.UserLoginRequest;
-import com.ss.center.dto.UserRegisterRequest;
-import com.ss.center.exception.BusinessException;
-import com.ss.center.model.User;
-import com.ss.center.service.UserService;
+import com.ss.usercenter.model.domain.request.UserLoginRequest;
+import com.ss.usercenter.model.domain.request.UserRegisterRequest;
+import com.ss.usercenter.common.BaseResponse;
+import com.ss.usercenter.common.ErrorCode;
+import com.ss.usercenter.common.ResultUtils;
+import com.ss.usercenter.exception.BusinessException;
+import com.ss.usercenter.model.domain.User;
+import com.ss.usercenter.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.ss.center.contant.UserConstant.ADMIN_ROLE;
-import static com.ss.center.contant.UserConstant.USER_LOGIN_STATE;
+import static com.ss.usercenter.contant.UserConstant.ADMIN_ROLE;
+import static com.ss.usercenter.contant.UserConstant.USER_LOGIN_STATE;
 
 /**
  * 用户接口
@@ -137,7 +137,6 @@ public class UserController {
         boolean b = userService.removeById(id);
         return ResultUtils.success(b);
     }
-
 
     /**
      * 是否为管理员

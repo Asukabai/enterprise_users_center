@@ -1,4 +1,4 @@
-package com.ss.center.dto;
+package com.ss.usercenter.model.domain.request;
 
 import lombok.Data;
 
@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 /**
  * 用户注册请求体
+ *
  */
 @Data
 public class UserRegisterRequest implements Serializable {
@@ -28,7 +29,7 @@ public class UserRegisterRequest implements Serializable {
     private String checkPassword;
 
     /**
-     * 员工编号
+     * 星球编号
      */
     private String planetCode;
 }

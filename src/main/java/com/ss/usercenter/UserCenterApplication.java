@@ -1,14 +1,19 @@
-package com.ss.center;
+package com.ss.usercenter;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 启动类
+ *
+ */
 @SpringBootApplication
-@MapperScan("com.ss.center.mapper")
-public class CenterDemoApplication {
+@MapperScan("com.ss.usercenter.mapper")
+public class UserCenterApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CenterDemoApplication.class, args);
+        SpringApplication.run(UserCenterApplication.class, args);
     }
+
 }

@@ -1,7 +1,8 @@
-package com.ss.center.common;
+package com.ss.usercenter.common;
 
 /**
  * 错误码
+ *
  */
 public enum ErrorCode {
 
