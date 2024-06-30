@@ -52,7 +52,7 @@ const Register: React.FC = () => {
             }
           }}
           logo={<img alt="logo" src={SYSTEM_LOGO}/>}
-          title="编程导航知识星球"
+          title="编程导航知识员工"
           subTitle={<a href={PLANET_LINK} target="_blank" rel="noreferrer">最好的编程学习知识圈子</a>}
           initialValues={{
             autoLogin: true,
@@ -124,11 +124,11 @@ const Register: React.FC = () => {
                   size: 'large',
                   prefix: <UserOutlined className={styles.prefixIcon}/>,
                 }}
-                placeholder="请输入星球编号"
+                placeholder="请输入员工编号"
                 rules={[
                   {
                     required: true,
-                    message: '星球编号是必填项！',
+                    message: '员工编号是必填项！',
                   },
                 ]}
               />
